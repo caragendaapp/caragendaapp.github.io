@@ -1,14 +1,21 @@
-# car-agenda-site
+# Araç Ajandası · Car Agenda — website
 
-Public pages for the Araç Ajandası app, served by GitHub Pages from `main`.
+Public website of the Araç Ajandası / Car Agenda app, served by GitHub Pages from `main`.
+Same layout as the Pressure Diary site (`style.css`, `lang.js`: Turkish and English, one at a time).
 
-| File | Published at | Used for |
-| --- | --- | --- |
-| `index.html` | `https://kaanonur.github.io/car-agenda-site/` | Short app page |
-| `privacy.html` | `https://kaanonur.github.io/car-agenda-site/privacy.html` | Play Console privacy policy URL |
-| `rules.json` | `https://kaanonur.github.io/car-agenda-site/rules.json` | Remote rules (`RULES_URL` in the app build) |
+| Page | Path |
+|---|---|
+| App page | `/` |
+| Privacy policy (TR + EN) | `/privacy.html` (Play Console privacy policy URL) |
+| Terms of use (TR + EN) | `/terms.html` |
+| Remote rules | `/rules.json` (`RULES_URL` in the app build) |
+
+The site is meant to live at the root of an organization site, `caragenda.github.io`:
+the repository must be named `<organization>.github.io`. AdMob later needs `app-ads.txt` at that root.
 
 ## Updating
 
-- **Privacy policy:** the source text is `docs/privacy-policy.md` in the app repo. Change both, and bump "Last updated".
-- **Rules:** copy `assets/rules/rules.json` from the app repo here after raising its `rulesVersion`. The app only takes a copy with the same `schemaVersion` and a newer `rulesVersion` (see `docs/remote-rules.md` in the app repo).
+- **Privacy policy:** the app repo keeps the same text in `docs/privacy-policy.md`. Change both and the effective date.
+- **Rules:** copy `assets/rules/rules.json` from the app repo here after raising its `rulesVersion`. The app only takes a copy with the same `schemaVersion` and a newer `rulesVersion`.
+
+Contact: caragenda@protonmail.com
