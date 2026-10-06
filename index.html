@@ -1,43 +1,77 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-title-tr="Araç Ajandası · Bakım ve masraf takibi"
+      data-title-en="Car Agenda · Service and cost tracker">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Araç Ajandası: Bakım &amp; Masraf</title>
-<meta name="description" content="Muayene, sigorta, MTV ve bakım tarihlerini hatırlatan, yakıt ve masrafı takip eden uygulama.">
-<link rel="icon" href="assets/icon.png">
-<link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Araç Ajandası · Car Agenda</title>
+  <meta name="description" content="Muayene, sigorta, MTV ve bakım tarihlerini hatırlatır; yakıt ve masrafı takip eder. Reminders for inspection, insurance, tax and service; fuel and cost tracking.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
 </head>
 <body>
 <main>
-  <header>
-    <img src="assets/icon.png" alt="">
-    <h1>Araç Ajandası: Bakım &amp; Masraf</h1>
-  </header>
-  <nav><a href="privacy.html">Gizlilik Politikası</a><a href="#en">English</a></nav>
-
-  <p>Aracının bütün tarihlerini ve masraflarını tek yerde tut. Araç Ajandası muayene, trafik sigortası, kasko, MTV taksitleri ve bakım zamanlarını takip eder, günü yaklaşınca hatırlatır.</p>
-
-  <div class="card">
-    <ul>
-      <li>Ruhsatının fotoğrafını çek, araç bilgileri kendiliğinden dolsun.</li>
-      <li>Muayene, MTV ve sigorta tarihleri kurallara göre hesaplanır; 30, 7 ve 1 gün kala hatırlatılır.</li>
-      <li>Motoruna göre bakım planı, kilometreye ve tarihe göre.</li>
-      <li>Yakıtı fişin fotoğrafından gir; tüketimini ve kilometre başına maliyetini gör.</li>
-      <li>Belge cüzdanı, lastik takımları, birden fazla araç, yedek, CSV ve PDF.</li>
-    </ul>
+  <div class="topbar">
+    <select class="lang-select" data-lang-select aria-label="Language / Dil">
+      <option value="tr">Türkçe</option>
+      <option value="en">English</option>
+    </select>
   </div>
 
-  <p>Hesap açman gerekmez. Bilgilerin yalnızca telefonunda saklanır, bize gönderilmez.</p>
-  <p class="muted">Tarihler ve tutarlar yürürlükteki genel kurallardan hesaplanan tahminlerdir. Uygulama hiçbir kamu kurumu, sigorta şirketi ya da araç üreticisiyle bağlantılı değildir.</p>
+  <div class="app">
+    <img src="icon.png" alt="">
+    <div>
+      <h1><span data-lang="tr">Araç Ajandası: Bakım &amp; Masraf</span><span data-lang="en">Car Agenda: Service &amp; Costs</span></h1>
+      <span class="muted" data-lang="tr">Muayene, sigorta, MTV ve bakım hatırlatıcı; yakıt ve masraf takibi</span>
+      <span class="muted" data-lang="en">Reminders for inspection, insurance, tax and service; fuel and cost tracking</span>
+    </div>
+  </div>
 
-  <h2 id="en">English</h2>
-  <p>Car Agenda keeps every date and cost of your car in one place: inspection, traffic insurance, comprehensive cover, motor vehicle tax installments and service intervals, with reminders as each one comes up. No account is needed and your data stays on your phone.</p>
-  <p><a href="privacy.html#en">Privacy Policy</a></p>
+  <div class="card" data-lang="tr">
+    <p style="margin-top:0">Aracının bütün tarihlerini ve masraflarını tek yerde tut. Araç Ajandası muayene, trafik sigortası, kasko, MTV taksitleri ve bakım zamanlarını takip eder, günü yaklaşınca hatırlatır.
+      Tüm verilerin yalnızca telefonunda saklanır.</p>
+    <ul>
+      <li>Ruhsatının fotoğrafını çek, araç bilgileri kendiliğinden dolsun</li>
+      <li>Muayene, MTV ve sigorta tarihleri kurallara göre hesaplanır; 30, 7 ve 1 gün kala ve günü gelince bildirim</li>
+      <li>Bildirimden tek dokunuşla "Yaptırdım", "Ödedim" ya da "Yarın hatırlat"</li>
+      <li>Motoruna göre bakım planı, kilometreye ve tarihe göre</li>
+      <li>Yakıtı fişin fotoğrafından gir; tüketimini ve kilometre başına maliyetini gör</li>
+      <li>Aylık masraf grafiği ve yeni bir aracın yıllık maliyet hesabı</li>
+      <li>Belge cüzdanı, lastik takımları, boya ve değişen parça haritası</li>
+      <li>Birden fazla araç; yedekleme, CSV ve araç geçmişi PDF'i</li>
+      <li>Ana ekran widget'ı: sıradaki iş ve tek dokunuşla yakıt ekleme (Android)</li>
+    </ul>
+    <p class="muted">Tarihler ve tutarlar yürürlükteki genel kurallardan hesaplanan tahminlerdir. Uygulama hiçbir kamu kurumu, sigorta şirketi ya da araç üreticisiyle bağlantılı değildir.</p>
+  </div>
 
-  <footer>
-    İletişim / Contact: <a href="mailto:caragenda@protonmail.com">caragenda@protonmail.com</a>
-  </footer>
+  <div class="card" data-lang="en">
+    <p style="margin-top:0">Keep every date and cost of your car in one place. Car Agenda tracks inspection, traffic insurance, comprehensive cover, motor vehicle tax installments and service intervals, and reminds you as each one comes up.
+      All your data stays on your phone.</p>
+    <ul>
+      <li>Snap your registration and the vehicle details fill in</li>
+      <li>Inspection, tax and insurance dates worked out from Turkish rules, with reminders 30, 7 and 1 day before and on the day</li>
+      <li>One-tap "Done", "Paid" or "Remind me tomorrow" from the notification</li>
+      <li>A service plan for your engine, by kilometres and by date</li>
+      <li>Enter fuel from a photo of the receipt; see consumption and cost per km</li>
+      <li>Monthly cost chart and a yearly cost estimate for a new car</li>
+      <li>Document wallet, tyre sets, and a map of painted or replaced panels</li>
+      <li>Several vehicles; backup, CSV export and a vehicle history PDF</li>
+      <li>Home screen widget: the next job and one-tap fuel entry (Android)</li>
+    </ul>
+    <p class="muted">Dates and amounts are estimates based on the general rules in force. The app is not affiliated with any public authority, insurer or vehicle manufacturer.</p>
+  </div>
+
+  <p>
+    <a href="privacy.html" data-lang="tr">Gizlilik Politikası</a>
+    <a href="privacy.html" data-lang="en">Privacy Policy</a>
+    <span data-lang="tr">· <a href="terms.html">Kullanım Koşulları</a></span>
+    <span data-lang="en">· <a href="terms.html">Terms of Use</a></span>
+  </p>
+
+  <footer>© 2026 Araç Ajandası ·
+    <span data-lang="tr">İletişim:</span><span data-lang="en">Contact:</span>
+    <a href="mailto:caragenda@protonmail.com">caragenda@protonmail.com</a></footer>
 </main>
 </body>
 </html>
