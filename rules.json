@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "rulesVersion": "2026.10.05-draft4",
+  "rulesVersion": "2026.10.08-draft1",
   "status": "draft",
   "generatedAt": "2026-10-05",
   "currency": "TRY",
@@ -593,6 +593,11 @@
   "ownershipCost": {
     "note": "Project assumptions for the new-vehicle cost estimate; not verified with insurers or manufacturers.",
     "comprehensiveRateOfPrice": 0.025,
+    "energyPrices": {
+      "note": "TL per litre, or per kWh for electric, used until the user has paid one themselves. Pump prices: Istanbul, 1 Oct 2026. Electric: the common public AC tariff of Oct 2026; charging at home costs less.",
+      "asOf": "2026-10-01",
+      "gasoline": 82.0, "diesel": 97.0, "lpg": 36.0, "hybrid": 82.0, "electric": 10.0
+    },
     "consumptionPer100Km": {
       "gasoline": {"base": 4.5, "perKw": 0.025},
       "diesel": {"base": 3.8, "perKw": 0.02},
